@@ -1,0 +1,32 @@
+{
+  "name": "gajdaw-diverse_functions",
+  "version": "0.1.1",
+  "author": "Włodzimierz Gajda",
+  "summary": "The module contains various functions like validate_platform()",
+  "license": "MIT",
+  "source": "https://github.com/puppet-by-examples/puppet-diverse_functions",
+  "project_page": "https://github.com/puppet-by-examples/puppet-diverse_functions",
+  "issues_url": "https://github.com/puppet-by-examples/puppet-diverse_functions/issues",
+  "tags": [
+    "function",
+    "validate_platform",
+    "validate",
+    "platform"
+  ],
+  "operatingsystem_support": [
+    {
+      "operatingsystem": "Ubuntu",
+      "operatingsystemrelease": [
+        "14.04"
+      ]
+    },
+    {
+      "operatingsystem": "CentOS",
+      "operatingsystemrelease": [
+        "6.5",
+        "7.0"
+      ]
+    }
+  ],
+  "dependencies": []
+}

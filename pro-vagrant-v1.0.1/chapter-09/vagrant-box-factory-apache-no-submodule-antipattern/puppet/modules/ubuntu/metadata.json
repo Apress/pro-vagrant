@@ -1,0 +1,45 @@
+{
+  "name": "gajdaw-ubuntu",
+  "version": "0.1.13",
+  "author": "Włodzimierz Gajda",
+  "summary": "Puppet module to update and upgrade Debian, Ubuntu",
+  "license": "MIT",
+  "source": "https://github.com/puppet-by-examples/puppet-ubuntu",
+  "project_page": "https://github.com/puppet-by-examples/puppet-ubuntu",
+  "issues_url": "https://github.com/puppet-by-examples/puppet-ubuntu/issues",
+  "tags": [
+    "debian",
+    "ubuntu",
+    "apt",
+    "apt-get",
+    "update",
+    "upgrade",
+    "clean"
+  ],
+  "operatingsystem_support": [
+    {
+      "operatingsystem": "Debian",
+      "operatingsystemrelease": [
+        "6.0",
+        "7.4",
+        "7.8"
+      ]
+    },
+    {
+      "operatingsystem": "Ubuntu",
+      "operatingsystemrelease": [
+        "12.04",
+        "14.04"
+      ]
+    }
+  ],
+  "requirements": [
+    { "name": "puppet", "version_requirement": "3.x" }
+  ],
+  "dependencies": [
+    {
+      "name": "gajdaw/diverse_functions",
+      "version_requirement": ">=0.1.1"
+    }
+  ]
+}

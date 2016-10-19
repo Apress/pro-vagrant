@@ -1,0 +1,4 @@
+Vagrant.configure(2) do |config|
+  config.vm.box = "ubuntu/trusty32"
+  config.vm.post_up_message = "The application is available at http://abc.example.lh:8765"
+end

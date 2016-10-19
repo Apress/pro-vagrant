@@ -1,0 +1,6 @@
+Vagrant.configure(2) do |config|
+
+   currentDirectory = Dir.pwd.strip
+   config.vm.provision "shell", inline: "echo -n #{currentDirectory} > box-directory.txt"
+
+end

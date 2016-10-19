@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{% block title %}{% endblock %}</title>
+</head>
+<body>
+
+<h1>Songs for kids</h1>
+<h4>Django application</h4>
+
+<ul>
+    <li><a href="{% url 'baa-url' %}">Baa, baa black sheep</a></li>
+    <li><a href="{% url 'sixpence-url' %}">Sing a song of sixpence</a></li>
+    <li><a href="{% url 'hush-url' %}">Hush little baby</a></li>
+</ul>
+
+{% block content %}{% endblock %}
+
+</body>
+</html>

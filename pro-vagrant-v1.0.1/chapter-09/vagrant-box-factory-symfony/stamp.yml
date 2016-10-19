@@ -1,0 +1,11 @@
+filename:    'box-version.txt'
+regex:       '|(?P<version>[\d\.]+)|'
+replacement: '{{ version }}'
+
+replacements:
+
+  -
+    filename:    'symfony.json'
+    regex:       '|"name": "symfony-v([\d\.]+)"|'
+    replacement: '"name": "symfony-v{{ version }}"'
+

@@ -1,0 +1,43 @@
+{
+  "name": "gajdaw-environment",
+  "version": "0.1.4",
+  "author": "Włodzimierz Gajda",
+  "summary": "Puppet module to change environment and install tools: mc, lynx, etc.",
+  "license": "MIT",
+  "source": "git@github.com:pro-vagrant/puppet-environment.git",
+  "project_page": "https://github.com/puppet-by-examples/puppet-environment",
+  "issues_url": "https://github.com/puppet-by-examples/puppet-environment/issues",
+  "tags": [
+    "environment",
+    "change home directory",
+    "curl",
+    "lynx",
+    "git",
+    "apache utils",
+    "ab",
+    "tree",
+    "mc"
+  ],
+  "operatingsystem_support": [
+    {
+      "operatingsystem": "Ubuntu",
+      "operatingsystemrelease": [
+        "12.04",
+        "14.04"
+      ]
+    }
+  ],
+  "requirements": [
+      { "name": "puppet", "version_requirement": "3.x" }
+  ],
+  "dependencies": [
+    {
+      "name": "gajdaw/diverse_functions",
+      "version_requirement": ">=0.1.1"
+    },
+    {
+      "name": "puppetlabs/stdlib",
+      "version_requirement": ">=4.5.0"
+    }
+  ]
+}

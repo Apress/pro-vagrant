@@ -1,0 +1,19 @@
+---
+- hosts: all
+  sudo: true
+  tasks:
+
+    - name: Update apt
+      apt: update_cache=yes
+
+    - name: Install nodejs
+      apt: name=nodejs state=present
+
+    - name: Install lynx
+      apt: name=lynx-cur state=present
+
+    - name: Install ruby1.9.1-dev
+      apt: name=ruby1.9.1-dev state=present
+
+    - name: Install Jekyll
+      shell: 'gem install jekyll'

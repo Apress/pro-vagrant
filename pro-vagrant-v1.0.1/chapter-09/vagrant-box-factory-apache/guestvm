@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+
+echo "============================================================"
+for filename in /home/vagrant/box-*
+do
+    cat $filename
+    echo
+done
+
+GUEST_ADDITIONS=`lsmod | grep -io vboxguest | xargs modinfo | grep -iw version`
+
+echo "VirtualBox Guest Addtions: ${GUEST_ADDITIONS}"
+
+echo "============================================================"

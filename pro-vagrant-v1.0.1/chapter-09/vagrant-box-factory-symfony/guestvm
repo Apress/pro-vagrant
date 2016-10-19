@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+echo "============================================================"
+for filename in /home/vagrant/box-*
+do
+    cat $filename
+    echo
+done
+echo "============================================================"

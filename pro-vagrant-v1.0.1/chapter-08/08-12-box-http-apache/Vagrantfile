@@ -1,0 +1,3 @@
+Vagrant.configure(2) do |config|
+  config.vm.box = "http://boxes.gajdaw.pl/apache/apache-v0.3.3.box"
+end

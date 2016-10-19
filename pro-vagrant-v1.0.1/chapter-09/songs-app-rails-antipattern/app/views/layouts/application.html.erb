@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Songs</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<h1>Songs for kids</h1>
+<h4>Ruby on Rails application</h4>
+
+<ul>
+    <li><%= link_to "Baa, baa black sheep", :action => "baa" %></li>
+    <li><%= link_to "Hush, little baby", :action => "hush" %></li>
+    <li><%= link_to "Sing a song of sixpence", :action => "sixpence" %></li>
+</ul>
+
+<%= yield %>
+
+</body>
+</html>

@@ -1,0 +1,3 @@
+class { 'ubuntu':
+    action => 'upgrade'
+}
